@@ -12,6 +12,12 @@ const authenticateToken = (req, res, next) => {
     return res.status(401).json({ error: 'Access token required' });
   }
 
+  // Check if JWT_SECRET is configured
+  if (!process.env.JWT_SECRET) {
+    console.error('❌ JWT_SECRET environment variable not configured');
+    return res.status(500).json({ error: 'Server configuration error' });
+  }
+
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decoded;
@@ -66,6 +72,12 @@ const authenticateUser = async (req, res, next) => {
   const token = authHeader && authHeader.split(' ')[1];
 
   if (token) {
+    // Check if JWT_SECRET is configured
+    if (!process.env.JWT_SECRET) {
+      console.error('❌ JWT_SECRET environment variable not configured');
+      return res.status(500).json({ error: 'Server configuration error' });
+    }
+
     try {
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
       req.user = decoded;

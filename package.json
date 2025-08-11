@@ -23,6 +23,9 @@
     "deploy:contracts": "cd contracts && npm run deploy",
     "install:all": "npm install && cd contracts && npm install && cd ../backend && npm install && cd ../frontend && npm install"
   },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
