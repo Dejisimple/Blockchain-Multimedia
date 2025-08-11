@@ -28,11 +28,6 @@
     "REACT_APP_CHAIN_ID": "11155111",
     "REACT_APP_RPC_URL": "https://sepolia.infura.io/v3/your-infura-project-id"
   },
-  "functions": {
-    "api/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "headers": [
     {
       "source": "/(.*)",
