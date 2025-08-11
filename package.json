@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Blockchain-based multimedia authentication and provenance system",
   "private": true,
+  "main": "index.js",
   "workspaces": [
     "contracts",
     "backend",
     "frontend"
   ],
   "scripts": {
+    "start": "node index.js",
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
