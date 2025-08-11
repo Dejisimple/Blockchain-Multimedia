@@ -12,9 +12,9 @@
   ],
   "env": {
     "REACT_APP_API_URL": "https://your-backend-domain.com",
-    "REACT_APP_MULTIMEDIA_NFT_ADDRESS": "@multimedia-nft-address",
-    "REACT_APP_LICENSING_CONTRACT_ADDRESS": "@licensing-contract-address",
-    "REACT_APP_WALLETCONNECT_PROJECT_ID": "@walletconnect-project-id",
+    "REACT_APP_MULTIMEDIA_NFT_ADDRESS": "0x0000000000000000000000000000000000000000",
+    "REACT_APP_LICENSING_CONTRACT_ADDRESS": "0x0000000000000000000000000000000000000000",
+    "REACT_APP_WALLETCONNECT_PROJECT_ID": "your-walletconnect-project-id",
     "REACT_APP_CHAIN_ID": "11155111",
     "REACT_APP_RPC_URL": "https://sepolia.infura.io/v3/your-infura-project-id"
   },
