@@ -9,23 +9,23 @@
     "frontend"
   ],
   "scripts": {
-    "dev": "concurrently \"pnpm run dev:backend\" \"pnpm run dev:frontend\"",
-    "dev:backend": "cd backend && pnpm run dev",
-    "dev:frontend": "cd frontend && pnpm run dev",
-    "build": "pnpm run build:backend && pnpm run build:frontend",
-    "build:backend": "cd backend && pnpm run build",
-    "build:frontend": "cd frontend && pnpm run build",
-    "test": "pnpm run test:contracts && pnpm run test:backend",
-    "test:contracts": "cd contracts && pnpm run test",
-    "test:backend": "cd backend && pnpm run test",
-    "deploy:contracts": "cd contracts && pnpm run deploy",
-    "install:all": "pnpm install && cd contracts && pnpm install && cd ../backend && pnpm install && cd ../frontend && pnpm install"
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:contracts && npm run test:backend",
+    "test:contracts": "cd contracts && npm run test",
+    "test:backend": "cd backend && npm run test",
+    "deploy:contracts": "cd contracts && npm run deploy",
+    "install:all": "npm install && cd contracts && npm install && cd ../backend && npm install && cd ../frontend && npm install"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
   "engines": {
     "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "npm": ">=8.0.0"
   }
 }
